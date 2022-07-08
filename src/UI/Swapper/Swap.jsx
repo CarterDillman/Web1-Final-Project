@@ -7,7 +7,7 @@ import styled from 'styled-components';
 // This is my component function
 const Swap = () => {
 
-    const [imgSrc, imgSrcUpdate] = useState('/assets/img/swapper/sunAndMoon/moon.png')
+    const [imgSrc, imgSrcUpdate] = useState('/assets/img/swapper/sunAndMoon/sun.png')
 
     const changeToImage1 = () => {
         console.log('change to image 1');
