@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SwapList from './Swapper/SwapList.jsx';
+import ClassWork from './Pages/ClassWork/ClassWork.jsx';
+
 const UI = () => {
 
     return (
@@ -11,7 +12,7 @@ const UI = () => {
                 Carter Dillman
             </div>
 
-            <SwapList />
+            <ClassWork />
         </UIStyled>
     );
 }

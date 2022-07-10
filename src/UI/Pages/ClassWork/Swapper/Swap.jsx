@@ -7,8 +7,6 @@ import styled from 'styled-components';
 // This is my component function
 const Swap = ({ swapData }) => {
 
-    console.log(swapData);
-
     const [imgSrc, imgSrcUpdate] = useState(swapData.image1.path);
     const [textState, textStateUpdate] = useState(swapData.image1.title);
 
