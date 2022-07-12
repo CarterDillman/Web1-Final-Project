@@ -28,7 +28,7 @@ const Swap = ({ swapData }) => {
             <div>
                 <img
                     src={ imgSrc }
-                    alt='The Moon'
+                    alt={ textState }
                     onMouseOver={ changeToImage1 }
                     onMouseOut={ changeToImage2 }
                 />
