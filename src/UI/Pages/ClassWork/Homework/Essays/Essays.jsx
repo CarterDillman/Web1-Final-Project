@@ -38,7 +38,15 @@ const Essays = () => {
             </Essay>
 
             <Essay q='Q4: What is the difference between Web Designer, Front End Developer and Back End Developer?'>
-                <p>My answer will go here</p>
+                <p>Web designers are responsible for big-picture decisions, like menus and font styles. They are responsible for things like layout and design. They also deal with the overall user experience of the website and making the site as easy for a customer to use and navigate.</p>
+                <p>A front-end developer creates the front end portion of websites and applications using languages like HTML/CSS/JS. Front-end developers create the user interface that determines what the application does when a user interacts with an application. They deal with client side information of the website.</p>
+                <p>A back-end developer writes code that is the backbone of a website or app. They build and maintain mechanisms that process data and perform actions on websites. They control everything involved with data storage, security, and other server-side functions that the users of a website or application never see.</p>
+            </Essay>
+
+            <Essay q='Q5: Distinguish the difference between Site Relative, Document Relative, and Absolute Paths.'>
+                <p>Relative paths shows where you are already located. They do not contain information about the domain and only show part of the path to the page. Relative paths take into account the argument that the server already knows where the page is located. They are useful within a site to transfer a user from point to point within the same domain.</p>
+                <p>Document relative paths are used for local links for most apps. They are most useful when the current document and the linked document or asset are in the same folder and are likely to remain together. You can use a document-relative path to link to a document or asset in another folder by specifying the path through the folder hierarchy from the current document to the linked document.</p>
+                <p>Absolute paths provide the complete path of the linked document. Absolute paths have to be used to link a document or asset that is on a different server. Using absolute paths for local links is discouraged because moving the site to another domain will break all the local absolute path links. Absolute paths are much less flexible than document relative paths and relative paths.</p>
             </Essay>
 
         </EssaysStyled>
