@@ -33,7 +33,8 @@ const Essays = () => {
             </Essay>
 
             <Essay q='Q3: What are Single Page Apps (SPAs)? How do they differ from traditional multi-page Web Sites?'>
-                <p>My answer will go here</p>
+                <p>A single page app (SPA) is a web app that loads only a single web document. It then updates the body content on that single document via JS APIs such as Fetch when different content needs to be shown. This allows users to use websites without loading new pages from the server. This allows for better performance and a more dynamic experience. Downsides to SPAs are more effort required to maintain state, implement navigation and do meaningful performance monitoring.</p>
+                <p>A multi page app (MPA) is a web app consisting of a large number of pages completely refreshed every time data is changed on them. Any data change or transfer to the server leads to a new page being displayed in the browser. This is the classic approach to web app development, requiring multi level navigation and a greater focus on speed and performance. This allows for ease of scaling, ready-made solutions, and allows for meaningful analytic capabilities. Downsides to MPAs are potential performance issues, deep front-end and back-end integration, and potential difficulties with maintenance and updates.</p>
             </Essay>
 
             <Essay q='Q4: What is the difference between Web Designer, Front End Developer and Back End Developer?'>
