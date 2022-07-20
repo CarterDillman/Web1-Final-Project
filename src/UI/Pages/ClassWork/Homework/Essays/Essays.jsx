@@ -49,6 +49,12 @@ const Essays = () => {
                 <p>Absolute paths provide the complete path of the linked document. Absolute paths have to be used to link a document or asset that is on a different server. Using absolute paths for local links is discouraged because moving the site to another domain will break all the local absolute path links. Absolute paths are much less flexible than document relative paths and relative paths.</p>
             </Essay>
 
+            <Essay q='Q6: What is the difference between jpg, gif, png and svg images?'>
+                <p>.jpg is a raster image format that uses a lossy compression algorithm, meaning that the image can lose some of it's data when saved in this format, potentially lowering the quality of the image as a whole. .jpg is the most common file format and is typically used in photography.</p>
+                <p>.gif is another type of image format that uses a lossless compression algorithm, meaning that the image does not lose any data when saved in this format, and keeps the original quality of the image. This translates to a larger file size. .gif also supports animation and uses a smaller range of colors compared to other image formats. .gif is typically best for logo or animated image creation.</p>
+                <p>.png is another type of image format that uses a lossless compression algorithm, meaning that the image does not lose any data when saved in this format, and keeps the original quality of the image. This translates to a larger file size. Unlike .gif's however, .png is only for static images and is typically used for icon's or digital art.</p>
+                <p>.svg is a vector image format that is text based and uses mathematical structures to represent an image and is highly scalable. This means this format is best used for high density or high resolution images where loss of information is not an option. This format also tends to be larger than the standard .jpg format.</p>
+            </Essay>
         </EssaysStyled>
     );
 }
