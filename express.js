@@ -26,6 +26,11 @@ app.use(express.json());
 /* Serve the static files from the React app ---------------------------*/
 app.use(express.static(path.join(__dirname, 'build')));
 
+/* Heroku :: Redirect to index so React Router Dom can handle routing ---------------*/
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/build/index.html'));
+});
+
 /*---------------------------
 | Port Management
 ---------------------------*/
