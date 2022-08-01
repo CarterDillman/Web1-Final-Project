@@ -71,6 +71,45 @@ const Essays = () => {
                 <p>Full-width slideshows that cover the entirety of the browser should be about 2560px in width since this is the standard resolution size for 27" and 30" monitors. The height of these images can vary based on what aspect ratio the designer is wanting to use. Gallery images or light box images should be around 1500px wide so they look good on desktops and tablets. On mobile devices, images get resized by the browser so a designer shouldn't need to consider the image looking poorly on high-PPI screens.</p>
                 <p>Blog images or other static images should be sized to match the width of the page content and then the image size be doubled to ensure that retina displays still see a clear image. Same concept goes for thumbnail images. Video assets should be a minimum 720p or 1080p as that has become the standard video size across multiple platforms. Ideally you use a format that can scale resolution to accommodate for users who might have poor internet so they can still watch the video at a lower resolution.</p>
             </Essay>
+            <Essay q='What does it mean for a company to be Agile? How is it different from Waterfall? What are the pros and cons of being agile?'>
+                <p>Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. An agile team delivers work in small, but consumable, increments. Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly. Agile is an umbrella term for a set of frameworks and practices that focuses on the people doing the work and how they work together.</p>
+                <p>Waterfall is a sequential development process that flows through all phases of a project with each phase completely wrapping up before the next phase begins. The success of the Waterfall method depends on the amount and quality of the work done on the front end, documenting everything in advance, including the user interface, user stories, and all the features' variations and outcomes. With the majority of the research done upfront, estimates of the time needed for each requirement are more accurate, and this can provide a more predictable release date. If parameters change along the way, it's harder to change course than it is with the Agile method.</p>
+                <p>Each method has its pros and cons and each has its scenarios where one will excel over the other.</p>
+                <p>Pros and cons of the waterfall method:</p>
+                <ul>
+                    <li>Pros
+                        <ul>
+                            <li>Waterfall method's meticulous upfront planning results in detailed project plans</li>
+                            <li>The project scope, cost, and timeline are clearly outlined, so clients will know exactly what will be delivered</li>
+                            <li>With a clear outline a new member can step in and contribute without derailing the timeline</li>
+                        </ul>
+                    </li>
+                    <li>Cons
+                        <ul>
+                            <li>Waterfall is rigid with a strict blueprint</li>
+                            <li>Testing is done at the end of development and QA takes significant time</li>
+                            <li>Once a waterfall project is started, changes to the project are very hard to implement</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Pros and cons of the agile method:</p>
+                <ul>
+                    <li>Pros
+                        <ul>
+                            <li>Revisits and rewrites of steps are encouraged to achieve the desired results</li>
+                            <li>Agile projects are tested throughout development allowing for faster delivery and a better project</li>
+                            <li>Frequent delivery allows for quick changes in project direction while maintaining scope</li>
+                        </ul>
+                    </li>
+                    <li>Cons
+                        <ul>
+                            <li>Agile doesn't set a strict schedule which can be difficult to hit a tight deadline</li>
+                            <li>Changing project requirements may cause problems in other areas of the organization</li>
+                            <li>Agile requires a consistent team</li>
+                        </ul>
+                    </li>
+                </ul>
+            </Essay>
         </EssaysStyled>
     );
 }
