@@ -12,6 +12,8 @@ const ClassWork = () => {
                 <NavLink to='/class' end>Essays</NavLink>
                 <NavLink to='/class/swapper'>Swapper</NavLink>
                 <NavLink to='/class/javascript'>JavaScript</NavLink>
+                <NavLink to='/class/controlled-input'>Controlled Input</NavLink>
+                <NavLink to='/class/forms'>Forms</NavLink>
             </nav>
 
             <Outlet />

@@ -110,6 +110,13 @@ const Essays = () => {
                     </li>
                 </ul>
             </Essay>
+            <Essay q='Q10: What are testing environments? What is the difference between Local, Dev, QA and Production?'>
+                <p>A test environment is where testing teams analyze the quality of the application/program. This also allows programmers to identify and fix any bugs that may impact smooth functioning of the applications or impair the user experience. A test environment is built by setting aside storage, computing and additional resources required for testing. This may include new devices, physical or virtual, provisioned for testing use cases as defined by developers.</p>
+                <p>Local test environments are usually local to a machine that has no connection to the actual product a developer is working on. It's a copy of the product where a developer can test any changes they'd like to make without affecting the main product or any of the other testing environments. This allows a developer to make changes freely without worrying about affecting other developers on the project.</p>
+                <p>Dev environments are the location of the main branch of a software application. This is where developers spend their time writing the building blocks of code for their application. From here, an application transforms from concept to the minimum variable product. The dev environment is usually hosted on platforms like GitHub, as it provides enough features to manage the starting phase of most applications.</p>
+                <p>A QA environment is meant to mimic production and is used by QA analysts and other testing professionals to perform many forms of functional and non-functional testing. Regression testing takes place in the QA environment, making sure new features are not breaking any existing functionalities or test regression bug fixes. This also allows testers to ensure that the product meets the project requirements.</p>
+                <p>Production environments are the live product. The production environment is where the intended users can finally interact with the final product. There is no active development or testing done on this environment, only finalized and tested updates can be pushed to this environment to ensure that users don't encounter any major bugs or issues.</p>
+            </Essay>
         </EssaysStyled>
     );
 }

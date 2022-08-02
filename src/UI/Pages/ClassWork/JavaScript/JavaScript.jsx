@@ -18,7 +18,7 @@ const JavaScript = () => {
 
     return (
         <JavaScriptStyled className='JavaScript'>
-            <h3>JavaScript Fundamentals</h3>
+            <h2>JavaScript Fundamentals</h2>
         </JavaScriptStyled>
     );
 }

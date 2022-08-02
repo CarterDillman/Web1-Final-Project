@@ -12,20 +12,24 @@ import ClassWork from './Pages/ClassWork/ClassWork.jsx';
 import Homework from './Pages/ClassWork/Homework/Homework.jsx';
 import Swapper from './Pages/ClassWork/Swapper/SwapList.jsx';
 import JavaScript from './Pages/ClassWork/JavaScript/JavaScript.jsx';
+import ControlledInput from './Pages/ClassWork/ControlledInput.jsx';
+import Forms from './Pages/ClassWork/Forms.jsx';
 
 const Routing = () => {
     return (
         <RoutingStyled className='Routing'>
             <Routes>
-                <Route element={ <Home /> }             path=''/>
-                <Route element={ <Staff /> }            path='/staff'/>
-                <Route element={ <Contact /> }          path='/contact'/>
-                <Route element={ <Login /> }            path='login'/>
+                <Route element={ <Home /> }                  path=''/>
+                <Route element={ <Staff /> }                 path='/staff'/>
+                <Route element={ <Contact /> }               path='/contact'/>
+                <Route element={ <Login /> }                 path='login'/>
 
-                <Route element={ <ClassWork /> }        path='/class'>
-                    <Route element={ <Homework /> }     path='' />
-                    <Route element={ <Swapper /> }      path='swapper'/>
-                    <Route element={ <JavaScript />}    path='javascript'/>
+                <Route element={ <ClassWork /> }             path='/class'>
+                    <Route element={ <Homework /> }          path='' />
+                    <Route element={ <Swapper /> }           path='swapper'/>
+                    <Route element={ <JavaScript />}         path='javascript'/>
+                    <Route element={ <ControlledInput /> }   path='controlled-input'/>
+                    <Route element={ <Forms /> }             path='forms'/>
                 </Route>
             </Routes>
         </RoutingStyled>

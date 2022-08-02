@@ -8,7 +8,7 @@ import Swap from './Swap.jsx';
 const SwapList = () => {
     return (
         <SwapListStyled className='SwapList'>
-            SwapList
+            <h2>SwapList</h2>
             {
                 swapperData.map((swapData, idx) => {
                     return <Swap key={ idx } swapData={ swapData } />
