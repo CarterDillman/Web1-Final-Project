@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import classNames from 'classnames';
+
+/* Context ---------------------------*/
+import Context from './Context/index.js';
+
 
 const Feedback = () => {
+
+    const { state } = useContext(Context);
+
+    if (!state.feedback.show) { return ''; }
+
+    const theClassName = classNames ({
+        'Feedback': true,
+        [state.feedback.type]: true,
+    });
+
     return (
-        <FeedbackStyled className='Feedback error'>
-            Form Feedback
+        <FeedbackStyled className={ theClassName }>
+            { state.feedback.message }
         </FeedbackStyled>
     );
 }
@@ -21,5 +36,9 @@ const FeedbackStyled = styled.div`
 
     &.success {
         background-color: #7df9a8;
+    }
+
+    &.pending {
+        background-color: #b3b3b3;
     }
 `;
