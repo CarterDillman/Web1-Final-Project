@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
-// Components
+/* Components ---------------------------*/
 import MainMenu from '../Menus/MainMenu.jsx';
 import ClassMenu from '../Menus/ClassMenu.jsx';
 
-const Menus = () => {
+const Menus = ({showMenuUpdate}) => {
 
     useEffect(() => {
 
@@ -19,8 +19,8 @@ const Menus = () => {
 
     return (
         <MenusStyled className='Menus'>
-            <MainMenu />
-            <ClassMenu />
+            <MainMenu showMenuUpdate={ showMenuUpdate }/>
+            <ClassMenu showMenuUpdate={ showMenuUpdate }/>
         </MenusStyled>
     );
 }
@@ -33,6 +33,8 @@ const MenusStyled = styled.div`
     top: 300px;
     right: 0px;
     bottom: 0px;
+
+    z-index: 1000;
 
     background-color: #014444;
 
