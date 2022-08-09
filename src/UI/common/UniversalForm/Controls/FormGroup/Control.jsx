@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 import ControlFeedback from './ControlFeedback.jsx';
 
-const Control = ({children}) => {
+const Control = ({children, id}) => {
     return (
         <ControlStyled className='Control'>
             { children }
-            <ControlFeedback />
+            <ControlFeedback id={ id }/>
         </ControlStyled>
     );
 }

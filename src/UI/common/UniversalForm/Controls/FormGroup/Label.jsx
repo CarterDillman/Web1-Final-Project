@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Label = () => {
+const Label = ({id, label}) => {
     return (
         <LabelStyled className='Label'>
-            <label>
-                Label
+            <label htmlFor={ id }>
+                { label }
             </label>
         </LabelStyled>
     );

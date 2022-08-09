@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* Components ---------------------------*/
 import UniversalForm, { Input, Textarea, SubmitButton } from 'UI/common/UniversalForm/UniversalForm.jsx';
 
 const Forms = () => {
@@ -17,8 +18,21 @@ const Forms = () => {
                 displayName='UF: ClassWork Form'
                 onSubmit={ onSubmit }
             >
-                <Input />
-                <Textarea />
+                <Input
+                    label='Name'
+                    id='username'
+                    type='text'
+                    placeholder='Full Name'
+                    defaultValue='Carter Dillman'
+                    rules={ [ 'required' ] }
+                />
+                <Textarea
+                    label='Tell us about yourself'
+                    id='about'
+                    placeholder='All about you...'
+                    defaultValue='This is what a bio might look like.'
+                    rules={ [ 'required' ] }
+                />
                 <SubmitButton>Submit the Form</SubmitButton>
             </UniversalForm>
 
