@@ -6,8 +6,11 @@ import UniversalForm, { Input, Textarea, SubmitButton } from 'UI/common/Universa
 
 const Forms = () => {
 
-    const onSubmit = () => {
-        console.log('classwork form has been submitted');
+    const onSubmit = ({fields, payload}) => {
+        console.group('Class Work Forms');
+            console.log('fields', fields);
+            console.log('payload', payload);
+        console.groupEnd();
     }
 
     return (
@@ -19,12 +22,28 @@ const Forms = () => {
                 onSubmit={ onSubmit }
             >
                 <Input
-                    label='Name'
-                    id='username'
+                    label='FirstName'
+                    id='first'
                     type='text'
-                    placeholder='Full Name'
-                    defaultValue='Carter Dillman'
+                    placeholder='First Name'
+                    defaultValue='Carter'
                     rules={ [ 'required' ] }
+                />
+                <Input
+                    label='LastName'
+                    id='last'
+                    type='text'
+                    placeholder='Last Name'
+                    defaultValue='Dillman'
+                    rules={ [ 'required' ] }
+                />
+                <Input
+                    label='Email'
+                    id='email'
+                    type='text'
+                    placeholder='Email'
+                    defaultValue='carter.dillman@example.com'
+                    rules={ [ 'required', 'email' ] }
                 />
                 <Textarea
                     label='Tell us about yourself'
