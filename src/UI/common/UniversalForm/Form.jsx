@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
+/* Context ---------------------------*/
+import Context from './Context/index.js';
+import { submitForm } from './Context/actions.js';
+
 const Form = ({children}) => {
+
+    const { dispatch, state } = useContext(Context);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Submitted Form');
+        submitForm(state, dispatch);
+    }
+
+    if (state.feedback.show && state.feedback.type === 'success') { return '';}
+
     return (
         <FormStyled className='Form'>
-            <form>
+            <form noValidate onSubmit={ handleSubmit }>
                 { children }
             </form>
         </FormStyled>

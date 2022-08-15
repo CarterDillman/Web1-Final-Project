@@ -127,6 +127,10 @@ const Essays = () => {
                 <p>An ID is given to a tag to give it a unique identifier from all class names and all tags. ID's can only be used once. This allows CSS and JS to target that specific element. If a tag has been given a class name and ID and CSS is applying styling to both the class name and the specific ID then CSS will override any settings that overlap from the tag down to the ID being the most specific.</p>
                 <p>Specificity is the algorithm used by browsers to determine the CSS declaration that is most relevant to an element, which determines the property value to apply to the element. The weight is determined by the number of selectors of each weight category in the selector matching element. Since JS can use CSS selectors it follows similar specificity rules however it does not cascade so it isn't controlled by the specificity rules of CSS.</p>
             </Essay>
+            <Essay q='What is a CSS Preprocessor? What are some examples? In React, what are styled components? How do Styled Components violate separation of concerns?'>
+                <p>CSS preprocessors are programs that let you generate CSS from the preprocessors own unique syntax. CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, etc.. These features make the CSS structure more readable and easier to maintain. To use a preprocessor, the CSS compiler must be installed on the web server or use the preprocessor to compile in the dev environment then upload the compiled CSS file to the web server. Some examples of CSS preprocessors are Sass, Less, and Stylus.</p>
+                <p>Styled components is a popular library that is used to style React applications. It allows developers to build custom components by writing CSS in JS. Styled components allow for automatic critical CSS. Styled Components mix CSS and JS which is against the separation of concerns. Styled Components uses conditional rendering, meaning it can decide a style at render time based on props.</p>
+            </Essay>
         </EssaysStyled>
     );
 }
