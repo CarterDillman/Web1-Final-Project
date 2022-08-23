@@ -10,11 +10,9 @@ import { defaultMediaQueries } from 'UI/common/useMediaQuery.js';
 const Footer = () => {
     return (
         <FooterStyled className='Footer'>
-            <div className="logo">
-                <SiteLogo />
-            </div>
-            <h2>CrossFit Decimate :: Peace, Love, Unity, Fitness, Chill, and Respect :: Colorado Springs, CO</h2>
-            <div className='copyright'>&copy; 2022. All rights reserved.</div>
+            <h2>Notice of Non-Affiliation</h2>
+            <p className='Notice'>This site is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Grinding Gear Games, or any of its subsidiaries or its affiliates. The official Path of Exile website can be found at https://www.pathofexile.com</p>
+            <p className='Notice'>The names Grinding Gear Games and Path of Exile as well as related names, marks, emblems and images are registered trademarks of their respective owners. The use of any trade name or trademark is for clarifying purposes only and does not imply any association with the trademark holder of their product brand.</p>
         </FooterStyled>
     );
 }
@@ -22,7 +20,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyled = styled.footer`
-    background-color: #014444;
+    background-color: #505050;
     color: white;
     padding: 20px 0px;
     margin: 50px 0px 0px;
@@ -45,11 +43,12 @@ const FooterStyled = styled.footer`
     h2 {
         color: white;
         margin: 5px 0px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
-    .copyright {
+    .Notice {
         font-size: 14px;
         color: white;
+
     }
 `;
