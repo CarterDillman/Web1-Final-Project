@@ -1,8 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useTable } from 'react-table';
+import { useTable, useRowSelect } from 'react-table';
 
-const HeistTable = ({columns, data}) => {
+const ExpeditionTable = ({columns, data}) => {
+
+    const IndeterminateCheckbox = React.forwardRef(
+        ({ indeterminate, ...rest }, ref) => {
+            const defaultRef = React.useRef();
+            const resolvedRef = ref || defaultRef;
+
+            React.useEffect(() => {
+                resolvedRef.current.indeterminate = indeterminate
+            }, [resolvedRef, indeterminate])
+
+            return (
+                    <input type='checkbox' ref={resolvedRef} {...rest} />
+            )
+        }
+    );
 
     const {
         getTableProps,
@@ -10,11 +25,31 @@ const HeistTable = ({columns, data}) => {
         headerGroups,
         rows,
         prepareRow,
-    } = useTable({ columns, data });
-
+        selectedFlatRows,
+        state: { selectedRowIds },
+    } = useTable(
+        {
+            columns, data
+        },
+        useRowSelect,
+        hooks => {
+            hooks.visibleColumns.push(columns => [
+                {
+                    id: 'selection',
+                    Header: 'Selected',
+                    Cell: ({row}) => (
+                        <div>
+                            <IndeterminateCheckbox {...row.getToggleRowSelectedProps()} />
+                        </div>
+                    ),
+                },
+                ...columns,
+            ])
+        }
+        );
 
     return (
-        <HeistTableStyled className='HeistTable'>
+        <ExpeditionTableStyled className='ExpeditionTable'>
             <table {...getTableProps()}>
                 <thead>
                     {headerGroups.map(headerGroup => (
@@ -26,7 +61,7 @@ const HeistTable = ({columns, data}) => {
                     ))}
                 </thead>
                 <tbody {...getTableBodyProps()}>
-                    {rows.map((row, idx) => {
+                    {rows.slice(0, data.length).map((row, idx) => {
                         prepareRow(row)
                         return(
                             <tr {...row.getRowProps()}>
@@ -38,13 +73,13 @@ const HeistTable = ({columns, data}) => {
                     })}
                 </tbody>
             </table>
-        </HeistTableStyled>
+        </ExpeditionTableStyled>
     );
 }
 
-export default HeistTable;
+export default ExpeditionTable;
 
-const HeistTableStyled = styled.div`
+const ExpeditionTableStyled = styled.div`
     margin: 30px;
     table {
         border-spacing: 0;

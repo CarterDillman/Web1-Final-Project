@@ -18,29 +18,4 @@ export default Heist;
 
 const HeistStyled = styled.div`
 
-    margin: 30px;
-    table {
-        border-spacing: 0;
-        border: 1px solid black;
-        text-align: center;
-        font-size: 14px;
-        tr {
-            :last-child {
-                td{
-                    border-bottom: 0;
-                }
-            }
-        }
-        th, td {
-            margin: 0;
-            padding: 10px;
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
-
-            :last-child {
-                border-right: 0;
-            }
-        }
-
-    }
 `;

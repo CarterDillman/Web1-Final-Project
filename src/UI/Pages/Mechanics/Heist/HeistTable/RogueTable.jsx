@@ -73,5 +73,13 @@ const RogueTable = () => {
 export default RogueTable;
 
 const RogueTableStyled = styled.div`
-
+    table tr:nth-child(n) td:first-child{
+        background-color: green;
+    }
+    table tr:nth-child(n+6) td:first-child{
+        background-color: yellow;
+    }
+    table tr:nth-child(n+8) td:first-child{
+        background-color: red;
+    }
 `;

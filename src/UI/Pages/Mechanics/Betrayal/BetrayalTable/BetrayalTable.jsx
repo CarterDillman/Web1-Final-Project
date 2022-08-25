@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useTable } from 'react-table';
 
-const HeistTable = ({columns, data}) => {
+const BetrayalTable = ({columns, data}) => {
 
     const {
         getTableProps,
@@ -12,9 +12,8 @@ const HeistTable = ({columns, data}) => {
         prepareRow,
     } = useTable({ columns, data });
 
-
     return (
-        <HeistTableStyled className='HeistTable'>
+        <BetrayalTableStyled className='BetrayalTable'>
             <table {...getTableProps()}>
                 <thead>
                     {headerGroups.map(headerGroup => (
@@ -38,13 +37,13 @@ const HeistTable = ({columns, data}) => {
                     })}
                 </tbody>
             </table>
-        </HeistTableStyled>
+        </BetrayalTableStyled>
     );
 }
 
-export default HeistTable;
+export default BetrayalTable;
 
-const HeistTableStyled = styled.div`
+const BetrayalTableStyled = styled.div`
     margin: 30px;
     table {
         border-spacing: 0;
@@ -68,6 +67,5 @@ const HeistTableStyled = styled.div`
                 border-right: 0;
             }
         }
-
     }
 `;
