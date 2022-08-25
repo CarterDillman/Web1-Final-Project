@@ -14,6 +14,7 @@ import Swapper from './Pages/ClassWork/Swapper/SwapList.jsx';
 import JavaScript from './Pages/ClassWork/JavaScript/JavaScript.jsx';
 import ControlledInput from './Pages/ClassWork/ControlledInput.jsx';
 import Forms from './Pages/ClassWork/Forms.jsx';
+import Video from './Pages/ClassWork/Video.jsx';
 
 const Routing = () => {
     return (
@@ -30,6 +31,7 @@ const Routing = () => {
                     <Route element={ <JavaScript />}         path='javascript'/>
                     <Route element={ <ControlledInput /> }   path='controlled-input'/>
                     <Route element={ <Forms /> }             path='forms'/>
+                    <Route element={ <Video /> }             path='video'/>
                 </Route>
             </Routes>
         </RoutingStyled>

@@ -14,6 +14,7 @@ const ClassWork = () => {
                 <NavLink to='/class/javascript'>JavaScript</NavLink>
                 <NavLink to='/class/controlled-input'>Controlled Input</NavLink>
                 <NavLink to='/class/forms'>Forms</NavLink>
+                <NavLink to='/class/video'>Video</NavLink>
             </nav>
 
             <Outlet />
