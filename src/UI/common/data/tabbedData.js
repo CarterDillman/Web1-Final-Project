@@ -1,17 +1,17 @@
 export const tabbedData = [
     {
         image: '/assets/img/tabbed/tabbed-assets/Alex-Esqueda-Box-Jump.jpg',
-        title: 'About',
-        text: '<p>Join a community of people working hard every day to live a better quality of life, and have fun doing it!  At CrossFit Decimate, we provide inclusive programming, individualized modifications, and top-trained coaches to give you the best fitness journey  to fit your lifestyle.</p>',
+        title: 'What is This Site?',
+        text: '<p>Path of Exile is notoriously complex and it can be hard to keep all the systems and interactions in mind as the game brings more leagues to core. The community has done an amazing job collecting this information but it&apos;s spread across wiki&apos;s, spreadsheets, and small singular pages.</p><p>The hope for this site is to consolidate that information into something more palatable for the average player looking for information.</p>',
     },
     {
         image: '/assets/img/tabbed/tabbed-assets/Tire-Flip.jpg',
-        title: 'Mission',
-        text: '<p>At Decimate, we believe that just like your fitness journey, nutrition is not a “one size fits all”.  Our highly trained nutrition coaches work alongside you to help you achieve your optimal health and fitness goals.  Through one-on-one coaching and personalized nutrition programming, our coaches are able to determine the best nutrition plan for you.</p>',
+        title: 'How to Use',
+        text: '<p>Each league mechanic can be found in the Leagues tab. Here is a quick explanation of what this site currently has: <ul><li>Betrayal<ul><li>Select Syndicate members to see what rewards they give in each location.</li></ul></li><li>Heist<ul><li>A list of Heist Rogues and their rewards.</li></ul></li><li>Expedition<ul><li>Regex for Gwennen Gambles with up to date data from poe.ninja.</li></ul></li><li>Incursion<ul><li>A list of rooms and their rewards for each tier.</li></ul></li></ul></p>',
     },
     {
         image: '/assets/img/tabbed/tabbed-assets/Kids.jpg',
-        title: 'Vision',
-        text: '<p>With our highly qualified and trained coach, Kara Smith, CrossFit Decimate is able to provide adaptive and inclusive workouts for each individual athlete, whether you are injured or working with a disability.  At CrossFit Decimate we believe that all people can workout and want to workout, they just need to be guided on how to achieve their goals.  Coach Kara offers modifications to each workout to help each athlete achieve their own level of success.  </p>',
+        title: 'Other Resources',
+        text: '<p>There are many tools and resources built by the community. You can find some links to them here: <ul><li><a href="https://poe.ninja/">poe.ninja</a><ul><li>A website that tracks currency rates and builds for the current league and difficulties. This can be used to see what builds are popular and what gear they are using.</li></ul></li><li><a href="https://pathofbuilding.community/">Path of Building</a><ul><li>A tree planner to map out potential new builds, the link above will take you to the community fork website.</li></ul></li></ul></p>',
     },
 ];

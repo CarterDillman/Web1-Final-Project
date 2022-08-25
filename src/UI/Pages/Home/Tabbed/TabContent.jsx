@@ -54,5 +54,8 @@ const TabContentStyled = styled.div`
             margin-bottom: 20px;
             line-height: 150%;
         }
+        br{
+            padding: 20px;
+        }
     }
 `;

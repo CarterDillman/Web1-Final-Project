@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import Slideshow from './Slideshow/Slideshow.jsx';
+//import Slideshow from './Slideshow/Slideshow.jsx';
 import Tabbed from './Tabbed/Tabbed.jsx';
 
 
@@ -11,7 +11,6 @@ const Home = () => {
         <HomeStyled className='Home'>
             <h1>Home</h1>
 
-            <Slideshow />
             <Tabbed />
 
         </HomeStyled>

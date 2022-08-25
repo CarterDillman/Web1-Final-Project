@@ -26,7 +26,7 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.header`
-    background-color: #014444;
+    background-color: #505050;
     color: white;
 
     h2 {
