@@ -1,19 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
-//Target rogue name for logic on changing color of cell
-//Move modifiers into array
-const HeistTable = () => {
+
+import { rogueData, rogueHeader } from 'UI/common/data/rogueData.js';
+
+import RogueRow from './RogueRow.jsx';
+import RogueHeader from './RogueHeader.jsx';
+
+const RogueTable = () => {
 
     return (
-        <HeistTableStyled className='HeistTable'>
-
-        </HeistTableStyled>
+        <RogueTableStyled className='RogueTable'>
+            <table>
+                <thead className='rogueHeader'>
+                    {
+                        rogueHeader.map((data, idx) => {
+                            return <RogueHeader key={idx} data={data} />
+                        })
+                    }
+                </thead>
+                <tbody>
+                    {
+                        rogueData.map((data, idx) => {
+                            return <RogueRow key={idx} data={data}/> ;
+                        })
+                    }
+                </tbody>
+            </table>
+        </RogueTableStyled>
     );
 }
 
-export default HeistTable;
+export default RogueTable;
 
-const HeistTableStyled = styled.div`
+const RogueTableStyled = styled.div`
     margin: 30px;
     table {
         border-spacing: 0;
@@ -21,6 +40,9 @@ const HeistTableStyled = styled.div`
         border: 1px solid black;
         text-align: center;
         font-size: 14px;
+        thead {
+            background-color: darkgreen;
+        }
         tr {
             :last-child {
                 td{
@@ -39,7 +61,6 @@ const HeistTableStyled = styled.div`
             }
         }
     }
-
     .Vinderi{
         background-color: lightgreen;
     }

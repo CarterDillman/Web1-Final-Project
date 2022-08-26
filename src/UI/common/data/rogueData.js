@@ -131,7 +131,21 @@ export const itemData = [
         tool: 'Reduced Fee (81)',
         brooch: 'Chance for Duplicate (83)',
         cloak: 'Reduced Alert from Chests (82)',
-        gear: 'Reduced Fee (81)'
-    }
+        gear: 'Reduced Fee (81)',
+    },
+]
 
+export const rogueHeader = [
+    {
+        agility: 'Agility',
+        demolition: 'Demolition',
+        lockpicking: 'Lockpicking',
+        engineering: 'Engineering',
+        deception: 'Deception',
+        thaumaturgy: 'Thaumaturgy',
+        perception: 'Perception',
+        bruteForce: 'Brute Force',
+        trapDisarm: 'Trap Disarm',
+        effect: 'Effect',
+    }
 ]
