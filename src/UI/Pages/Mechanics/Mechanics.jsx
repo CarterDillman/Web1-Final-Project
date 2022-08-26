@@ -6,7 +6,7 @@ const Mechanics = () => {
     return (
         <MechanicsStyled className='Mechanics'>
             <nav className='sublinks'>
-                <NavLink to='/mechanics'>Heist</NavLink>
+                <Navlink to='/mechanics'>Heist</Navlink>
             </nav>
 
             <Outlet />

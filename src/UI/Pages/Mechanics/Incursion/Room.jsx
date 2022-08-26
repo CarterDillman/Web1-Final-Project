@@ -50,7 +50,7 @@ const RoomStyled = styled.div`
     }
 
     @media ${defaultMediaQueries.lgUp}{
-        width: 20%;
+        width: 30%;
         margin: 20px;
     }
 
