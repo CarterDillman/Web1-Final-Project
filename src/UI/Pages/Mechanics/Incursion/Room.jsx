@@ -50,7 +50,7 @@ const RoomStyled = styled.div`
     }
 
     @media ${defaultMediaQueries.lgUp}{
-        width: 30%;
+        width: 27%;
         margin: 20px;
     }
 
@@ -61,8 +61,8 @@ const RoomStyled = styled.div`
     }
 
     h3 {
-        color: white;
-        background-color: #014444;
+        color: #dfcf99;
+        background-color: #332f24;
         margin: 0px;
         padding: 5px 10px;
     }

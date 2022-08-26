@@ -26,10 +26,5 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.header`
-    background-color: #505050;
-    color: white;
 
-    h2 {
-        color: white;
-    }
 `;

@@ -8,11 +8,11 @@ const TabMenuList = ({curTab, curTabUpdate, tabbedData}) => {
 
     return (
         <TabMenuListStyled className='TabMenuList'>
-           {
+            {
                 tabbedData.map((item, idx) => {
                     return <TabMenuItem key={ idx } item={ item } curTab={ curTab } curTabUpdate={ curTabUpdate } />
                 })
-           }
+            }
         </TabMenuListStyled>
     );
 }

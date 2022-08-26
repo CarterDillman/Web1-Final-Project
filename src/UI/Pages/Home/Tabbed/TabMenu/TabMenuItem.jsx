@@ -19,8 +19,7 @@ const TabMenuItem = ({curTab, curTabUpdate, item}) => {
 export default TabMenuItem;
 
 const TabMenuItemStyled = styled.div`
-    background-color: #014444;
-    color: #17b1b1;
+    background-color: #0f0f0f;
     width: 150px;
     text-align: center;
     cursor: pointer;
@@ -29,7 +28,7 @@ const TabMenuItemStyled = styled.div`
     margin-right: 5px;
 
     &.selected {
-        background-color: teal;
-        color: white;
+        background-color: #734e32;
+        color: #f2c462;
     }
 `;

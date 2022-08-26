@@ -24,7 +24,7 @@ const RoomList = () => {
 export default RoomList;
 
 const RoomListStyled = styled.div`
-    background-color: teal;
+    background-color: #0f0f0f;
     padding: 20px;
     margin: 20px 0px;
 

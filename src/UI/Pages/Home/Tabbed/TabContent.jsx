@@ -22,7 +22,9 @@ export default TabContent;
 
 const TabContentStyled = styled.div`
     padding: 20px;
-    background-color: teal;
+    background-color: #0f0f0f;
+    border: 2px solid #734e32;
+    border-radius: 5px;
 
     @media ${ defaultMediaQueries.mdUp }{
         display: flex;
@@ -45,12 +47,12 @@ const TabContentStyled = styled.div`
 
         h3{
             font-size: 30px;
-            color: white;
+            color: #dfcf99;
         }
 
         p{
             font-size: 18px;
-            color: #8cc6c6;
+            color: #a38d6d;
             margin-bottom: 20px;
             line-height: 150%;
         }

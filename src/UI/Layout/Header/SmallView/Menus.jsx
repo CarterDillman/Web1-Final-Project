@@ -36,25 +36,22 @@ const MenusStyled = styled.div`
 
     z-index: 1000;
 
-    background-color: #014444;
+    background-color: #0f0f0f;
 
     h2 {
         font-size: 20px;
         margin: 0px;
         padding: 10px;
-        color: white;
-        border-bottom: 1px solid #999999;
+        border-bottom: 1px solid #734e32;
     }
 
     a {
         display: block;
         padding: 10px;
-        border-bottom: 1px solid #999999;
-        color: white;
-        text-decoration: none;
+        border-bottom: 1px solid #734e32;
 
         &:hover, &:active, &:focus {
-            background-color: #002a2a;
+            background-color: #332f24;
         }
     }
 `;

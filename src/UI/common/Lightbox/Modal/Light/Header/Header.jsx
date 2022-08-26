@@ -17,10 +17,10 @@ export default Header;
 
 const HeaderStyled = styled.div`
     display: flex;
-    background-color: #014444;
+    background-color: #332f24;
 
     h4 {
-        color: white;
+        color: #dfcf99;
         flex: 1;
     }
 

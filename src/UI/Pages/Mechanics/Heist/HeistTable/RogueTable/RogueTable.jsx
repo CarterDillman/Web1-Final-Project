@@ -11,14 +11,12 @@ const RogueTable = () => {
     return (
         <RogueTableStyled className='RogueTable'>
             <table>
-                <thead className='rogueHeader'>
+                <tbody>
                     {
                         rogueHeader.map((data, idx) => {
                             return <RogueHeader key={idx} data={data} />
                         })
                     }
-                </thead>
-                <tbody>
                     {
                         rogueData.map((data, idx) => {
                             return <RogueRow key={idx} data={data}/> ;
@@ -34,58 +32,62 @@ export default RogueTable;
 
 const RogueTableStyled = styled.div`
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     table {
-        border-spacing: 0;
-        background-color: grey;
-        border: 1px solid black;
-        text-align: center;
-        font-size: 14px;
         thead {
-            background-color: darkgreen;
+            background-color: #332f24;
+            color: #dfcf99;
         }
         tr {
+            line-height: 1;
             :last-child {
                 td{
                     border-bottom: 0;
                 }
             }
         }
-        th, td {
-            margin: 0;
+        th {
             padding: 10px;
+            margin: 0;
+        }
+        th, td {
             border-bottom: 1px solid black;
             border-right: 1px solid black;
-
             :last-child {
                 border-right: 0;
             }
         }
     }
-    .Vinderi{
-        background-color: lightgreen;
+    .rogueName{
+        font-weight: bold;
+        font-size: 18px;
     }
-    .Karst {
+    .Vinderi, .Karst, .Nenet, .Tullina {
         background-color: lightgreen;
-    }
-    .Nenet {
-        background-color: lightgreen;
-    }
-    .Tullina {
-        background-color: lightgreen;
+        color: #332f24;
     }
     .Gianna {
+        background-color: lightgreen;
+        color: #332f24;
+        :nth-child(7){
+            background-color: yellow;
+        }
+        :nth-child(8){
+            background-color: red;
+        }
+    }
+    .Isla, .Tibbs {
         background-color: yellow;
+        color: #332f24;
     }
-    .Isla {
-        background-color: yellow;
-    }
-    .Tibbs {
+    .Niles, .Huck {
         background-color: red;
+        color: #332f24;
     }
-    .Niles {
-        background-color: red;
-    }
-    .Huck {
-        background-color: red;
+    .effect{
+        white-space: nowrap;
+        color: #8888ff;
     }
 `;

@@ -1,6 +1,7 @@
 export const rogueData = [
     {
         rogue: 'Vinderi',
+        image: './assets/img/heist/VinderiPortrait.png',
         agility: '-',
         demolition: 5,
         lockpicking: '-',
@@ -14,6 +15,7 @@ export const rogueData = [
     },
     {
         rogue: 'Karst',
+        image: './assets/img/heist/KarstPortrait.png',
         agility: 2,
         demolition: '-',
         lockpicking: 5,
@@ -27,6 +29,7 @@ export const rogueData = [
     },
     {
         rogue: 'Nenet',
+        image: './assets/img/heist/NenetPortrait.png',
         agility: '-',
         demolition: '-',
         lockpicking: '-',
@@ -40,6 +43,7 @@ export const rogueData = [
     },
     {
         rogue: 'Tullina',
+        image: './assets/img/heist/TullinaPortrait.png',
         agility: 5,
         demolition: '-',
         lockpicking: 3,
@@ -53,6 +57,7 @@ export const rogueData = [
     },
     {
         rogue: 'Gianna',
+        image: './assets/img/heist/GiannaPortrait.png',
         agility: '-',
         demolition: '-',
         lockpicking: '-',
@@ -66,6 +71,7 @@ export const rogueData = [
     },
     {
         rogue: 'Isla',
+        image: './assets/img/heist/IslaPortrait.png',
         agility: '-',
         demolition: '-',
         lockpicking: '-',
@@ -79,6 +85,7 @@ export const rogueData = [
     },
     {
         rogue: 'Tibbs',
+        image: './assets/img/heist/TibbsPortrait.png',
         agility: '-',
         demolition: 4,
         lockpicking: '-',
@@ -92,6 +99,7 @@ export const rogueData = [
     },
     {
         rogue: 'Niles',
+        image: './assets/img/heist/NilesPortrait.png',
         agility: '-',
         demolition: '-',
         lockpicking: '-',
@@ -105,6 +113,7 @@ export const rogueData = [
     },
     {
         rogue: 'Huck',
+        image: './assets/img/heist/HuckPortrait.png',
         agility: '-',
         demolition: 3,
         lockpicking: 3,
@@ -116,18 +125,71 @@ export const rogueData = [
         trapDisarm: '-',
         effect: '25% Increased Exp, Buffs to Allies',
     },
+    {
+        agiRewards: [
+            'Armour [1]\n',
+            'Currency [5]\n',
+            'Essence [5]\n',
+            'Fossils [34]\n',
+            'Harbinger [68]\n',
+        ],
+        demoRewards: [
+            'Generic [1]\n',
+            'Blight [68]\n',
+            'Delirium [68]\n',
+            'Metamorph [68]\n',
+        ],
+        lockRewards: [
+            'Jewelry [1]\n',
+            'Currency [5]\n',
+            'Fragments [68]\n',
+        ],
+        engiRewards: [
+            'Essence [5]\n',
+            'Uniques [10]\n',
+            'Maps [68]\n',
+        ],
+        decepRewards: [
+            'Armour [1]\n',
+            'Divination Cards [36]\n',
+            'Harbinger [68]\n',
+        ],
+        thauRewards: [
+            'Jewelry [1]\n',
+            'Currency [5]\n',
+            'Skill Gems [6]\n',
+        ],
+        percepRewards: [
+            'Jewelry [1]\n',
+            'Prophecies [8]\n',
+            'Divination Cards [36]\n',
+        ],
+        bruteRewards: [
+            'Weapons [1]\n',
+            'Uniques [10]\n',
+            'Fossils [34]\n',
+        ],
+        trapRewards: [
+            'Talisman [1]\n',
+            'Armour [1]\n',
+            'Weapons [1]\n',
+            'Abyss [46]\n',
+            'Breach [68]\n',
+            'Legion [68]\n',
+        ],
+    }
 ]
 
 export const itemData = [
     {
-        modifiers: 'Prefix',
+        modifier: 'Prefix',
         tool: 'Job Speed (81)',
         brooch: 'Quantity (84)',
         cloak: 'Lockdown Time (81)',
         gear: 'Job Speed (81)',
     },
     {
-        modifiers: 'Suffix',
+        modifier: 'Suffix',
         tool: 'Reduced Fee (81)',
         brooch: 'Chance for Duplicate (83)',
         cloak: 'Reduced Alert from Chests (82)',

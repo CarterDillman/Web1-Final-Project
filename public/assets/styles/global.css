@@ -9,6 +9,9 @@
 html, body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
+    color: #a38d6d;
+    background: #000 url(../img/kalandra-bg.jpg) no-repeat top center;
+    background-size: contain;
 }
 body {
     overflow-y: scroll;
@@ -27,7 +30,7 @@ body.modal-open {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     margin: 0px 0px 20px;
-    color: #014444;
+    color: #dfcf99;
 }
 
 h1, h2 { font-weight: 700; }
@@ -40,6 +43,26 @@ h3 { font-size: 20px; }
 h4 { font-size: 16px; }
 h5 { font-size: 12px; }
 h6 { font-size: 11px; }
+
+a {
+    color:#f2c462;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #f2dcae;
+    text-decoration: underline;
+}
+
+table {
+    border-spacing: 0;
+    line-height: 0.5;
+    background-color: #26231b;
+    border: 1px solid #1a1812;
+    text-align: center;
+    font-size: 14px;
+}
+
 
 .sr-only {
     position: absolute;

@@ -22,8 +22,6 @@ const TableHeader = ({data}) => {
 export default TableHeader;
 
 const TableHeaderStyled = styled.tr`
-    th {
-        border-bottom: 1px solid black;
-
-    }
+    background-color: #332f24;
+    color: #dfcf99;
 `;

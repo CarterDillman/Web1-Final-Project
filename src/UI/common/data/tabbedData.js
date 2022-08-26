@@ -12,6 +12,6 @@ export const tabbedData = [
     {
         image: '/assets/img/tabbed/tabbed-assets/Kids.jpg',
         title: 'Other Resources',
-        text: '<p>There are many tools and resources built by the community. You can find some links to them here: <ul><li><a href="https://poe.ninja/">poe.ninja</a><ul><li>A website that tracks currency rates and builds for the current league and difficulties. This can be used to see what builds are popular and what gear they are using.</li></ul></li><li><a href="https://pathofbuilding.community/">Path of Building</a><ul><li>A tree planner to map out potential new builds, the link above will take you to the community fork website.</li></ul></li></ul></p>',
+        text: '<p>There are many tools and resources built by the community. You can find some links to them here: <ul><li><a href="https://poe.ninja/ target="_blank">poe.ninja</a><ul><li>A website that tracks currency rates and builds for the current league and difficulties. This can be used to see what builds are popular and what gear they are using.</li></ul></li><li><a href="https://pathofbuilding.community/" target="_blank" rel="noreferrer noopener">Path of Building</a><ul><li>A tree planner to map out potential new builds, the link above will take you to the community fork website.</li></ul></li></ul></p>',
     },
 ];
