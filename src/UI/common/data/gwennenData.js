@@ -6,5 +6,13 @@ export const gwennenData = [
     {
         base: 'Elegant Round Shield',
         item: '',
-    }
+    },
+    {
+        base: 'Champion Kite Shield',
+        item: '/assets/img/incursion/SacrificialChamber.png',
+    },
+    {
+        base: 'Elegant Round Shield',
+        item: '',
+    },
 ]
