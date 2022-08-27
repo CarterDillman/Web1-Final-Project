@@ -17,7 +17,6 @@ const MainMenu = ({showMenuUpdate}) => {
             <NavLink onClick={ onClick }to={'/incursion'}>Incursion</NavLink>
             <NavLink onClick={ onClick }to={'/expedition'}>Expedition</NavLink>
             <NavLink onClick={ onClick }to={'/heist'}>Heist</NavLink>
-            <NavLink onClick={ onClick }to={'/betrayal'}>Betrayal</NavLink>
             <NavLink onClick={ onClick }to={'/login'}>Login</NavLink>
         </MainMenuStyled>
     );

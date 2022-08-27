@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const SiteLogo = () => {
     return (
         <SiteLogoStyled className='SiteLogo'>
-            <img src='/assets/img/crossfit-decimate-logo.png' alt='CrossFit Decimate Logo' />
+            <img src='/assets/img/Path-of-Exile-logo.png' alt='Path of Excile Logo' />
         </SiteLogoStyled>
     );
 }

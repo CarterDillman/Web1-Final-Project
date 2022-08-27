@@ -53,8 +53,8 @@ const RogueTableStyled = styled.div`
             margin: 0;
         }
         th, td {
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
+            border-bottom: 1px solid #1a1812;
+            border-right: 1px solid #1a1812;
             :last-child {
                 border-right: 0;
             }

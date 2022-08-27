@@ -53,8 +53,8 @@ const ToolTableStyled = styled.div`
         th, td {
             margin: 0;
             padding: 10px;
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
+            border-bottom: 1px solid #1a1812;
+            border-right: 1px solid #1a1812;
 
             :last-child {
                 border-right: 0;

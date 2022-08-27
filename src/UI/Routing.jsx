@@ -7,7 +7,6 @@ import Home from './Pages/Home/Home.jsx';
 import Incursion from './Pages/Mechanics/Incursion/Incursion.jsx';
 import Expedition from './Pages/Mechanics/Expedition/Expedition.jsx';
 import Heist from './Pages/Mechanics/Heist/Heist.jsx';
-import Betrayal from './Pages/Mechanics/Betrayal/Betrayal.jsx';
 import Login from './Pages/Login.jsx';
 
 import ClassWork from './Pages/ClassWork/ClassWork.jsx';
@@ -26,7 +25,6 @@ const Routing = () => {
                 <Route element={ <Incursion /> }             path='/incursion'/>
                 <Route element={ <Expedition /> }            path='/expedition'/>
                 <Route element={ <Heist /> }                 path='/heist'/>
-                <Route element={ <Betrayal /> }              path='/betrayal'/>
                 <Route element={ <Login /> }                 path='login'/>
 
                 <Route element={ <ClassWork /> }             path='/class'>

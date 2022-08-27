@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const LesserRow = ({ data, checked, onChange }) => {
+const GrandRow = ({ data, checked, onChange }) => {
     return (
-        <LesserRowStyled className='LesserRow'>
+        <GrandRowStyled className='GrandRow'>
             <td><input
                 type='checkbox'
                 data={data}
@@ -13,13 +13,13 @@ const LesserRow = ({ data, checked, onChange }) => {
             </td>
             <td>{data.base}</td>
             <td><img src={data.item} /></td>
-        </LesserRowStyled>
+        </GrandRowStyled>
     );
 }
 
-export default LesserRow;
+export default GrandRow;
 
-const LesserRowStyled = styled.tr`
+const GrandRowStyled = styled.tr`
     img {
         max-width: 50%;
     }

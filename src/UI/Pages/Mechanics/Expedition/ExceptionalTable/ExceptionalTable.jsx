@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-import LesserRow from './LesserRow.jsx';
+import ExceptionalRow from './ExceptionalRow.jsx';
 
-
-const LesserTable = ({data, checkState, onChange}) => {
+const ExceptionalTable = ({data, checkState, onChange}) => {
     return (
-        <LesserTableStyled className='LesserTable'>
+        <ExceptionalTableStyled className='ExceptionalTable'>
             <table>
                 <tbody>
                     <tr>
-                        <th colSpan={3}>Lesser Broken Circle Artifact</th>
+                        <th colSpan={3}>Exceptional Broken Circle Artifact</th>
                     </tr>
                     <tr>
                         <th>Selected</th>
@@ -19,18 +18,18 @@ const LesserTable = ({data, checkState, onChange}) => {
                     </tr>
                     {
                         data.map((base, idx) => {
-                            return <LesserRow key={idx} data={base} checked={checkState[idx]} onChange={() => onChange(idx)} />
+                            return <ExceptionalRow key={idx} data={base} checked={checkState[idx]} onChange={() => onChange(idx)} />
                         })
                     }
                 </tbody>
             </table>
-        </LesserTableStyled>
+        </ExceptionalTableStyled>
     );
 }
 
-export default LesserTable;
+export default ExceptionalTable;
 
-const LesserTableStyled = styled.div`
+const ExceptionalTableStyled = styled.div`
     margin: 30px;
     display: flex;
     justify-content: center;
