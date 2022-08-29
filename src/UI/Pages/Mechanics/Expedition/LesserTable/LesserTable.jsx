@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+/* Components ---------------------------*/
 import LesserRow from './LesserRow.jsx';
 
 
@@ -31,10 +32,9 @@ const LesserTable = ({data, checkState, onChange}) => {
 export default LesserTable;
 
 const LesserTableStyled = styled.div`
-    margin: 30px;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
     table {
         th {
             background-color: #332f24;
@@ -50,12 +50,19 @@ const LesserTableStyled = styled.div`
         th, td {
             margin: 0;
             padding: 10px;
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
+            border-bottom: 1px solid #1a1812;
+            border-right: 1px solid #1a1812;
 
             :last-child {
                 border-right: 0;
             }
         }
+    }
+    .items {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .check {
+        width: 5%;
     }
 `;

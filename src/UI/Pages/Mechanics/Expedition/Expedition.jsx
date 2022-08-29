@@ -8,12 +8,11 @@ const Expedition = () => {
     // Testing State for string generation
 
     return (
-        <ExpeditionStyled className='Expedition'>
-            <div className='generator'>
+        <ExpeditionStyled className='Expedition inset'>
             <h2>Gwennen Search String Generator</h2>
-            <p>Select the items you would like to gamble for from Gwennen and paste the result into the trade window search bar.</p>
-            </div>
+            <p className='instruction'>Select the items you would like to gamble for from Gwennen and paste the result into the trade window search bar.</p>
             <StringGen />
+
         </ExpeditionStyled>
     );
 }
@@ -21,22 +20,8 @@ const Expedition = () => {
 export default Expedition;
 
 const ExpeditionStyled = styled.div`
-    max-width: 1200px;
-    margin: auto;
     background-color: #0f0f0f;
     border: 2px solid #734e32;
     border-radius: 5px;
-    padding: 20px auto;
-
-    .generator{
-        margin: auto;
-        width: 75%;
-    }
-
-    h2 {
-        margin: 20px auto;
-        padding: 20px 0px 20px 0px;
-        border-bottom: 1px solid #734e32;
-        font-size: 32px;
-    }
+    padding-bottom: 50px;
 `;

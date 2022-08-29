@@ -43,5 +43,8 @@ const Login = () => {
 export default Login;
 
 const LoginStyled = styled.div`
-
+    background-color: #0f0f0f;
+    border: 2px solid #734e32;
+    border-radius: 5px;
+    height: 900px;
 `;

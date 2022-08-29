@@ -21,10 +21,11 @@ const TabContent = ({ curTab }) => {
 export default TabContent;
 
 const TabContentStyled = styled.div`
+    margin-bottom: 20px;
     padding: 20px;
-    background-color: #0f0f0f;
+    background-color: #26231b;
     border: 2px solid #734e32;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 5px;
 
     @media ${ defaultMediaQueries.mdUp }{
         display: flex;
@@ -54,10 +55,16 @@ const TabContentStyled = styled.div`
             font-size: 18px;
             color: #a38d6d;
             margin-bottom: 20px;
-            line-height: 150%;
+            line-height: 1.25;
         }
-        br{
-            padding: 20px;
+
+        ul {
+            margin: 0 0 10px 5px;
+            padding: 5px 0;
+            font-size: 18px;
+            line-height: 1.25;
+            list-style-type: none;
         }
     }
+
 `;

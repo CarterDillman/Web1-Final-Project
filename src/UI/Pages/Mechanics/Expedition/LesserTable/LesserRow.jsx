@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const LesserRow = ({ data, checked, onChange }) => {
     return (
         <LesserRowStyled className='LesserRow'>
-            <td><input
+            <td className='check'><input
                 type='checkbox'
                 data={data}
                 checked={checked}
@@ -12,7 +12,7 @@ const LesserRow = ({ data, checked, onChange }) => {
                 />
             </td>
             <td>{data.base}</td>
-            <td><img src={data.item} /></td>
+            <td className='items'><img src={data.item} /></td>
         </LesserRowStyled>
     );
 }
@@ -21,6 +21,6 @@ export default LesserRow;
 
 const LesserRowStyled = styled.tr`
     img {
-        max-width: 50%;
+        max-width: 10%;
     }
 `;

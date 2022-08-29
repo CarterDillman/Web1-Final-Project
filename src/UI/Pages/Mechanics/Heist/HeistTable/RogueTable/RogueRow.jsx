@@ -23,12 +23,7 @@ const RogueRow = ({data}) => {
 export default RogueRow;
 
 const RogueRowStyled = styled.tr`
-    width: 100%;
-    td {
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
-    }
     img {
-        max-width: 30%;
+        max-width: 40%;
     }
 `;

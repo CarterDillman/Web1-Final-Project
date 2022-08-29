@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* Components ---------------------------*/
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './Pages/Home/Home.jsx';

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const GrandRow = ({ data, checked, onChange }) => {
     return (
         <GrandRowStyled className='GrandRow'>
-            <td><input
+            <td className='check'><input
                 type='checkbox'
                 data={data}
                 checked={checked}
@@ -12,7 +12,7 @@ const GrandRow = ({ data, checked, onChange }) => {
                 />
             </td>
             <td>{data.base}</td>
-            <td><img src={data.item} /></td>
+            <td className='items'><img src={data.item} /></td>
         </GrandRowStyled>
     );
 }
@@ -21,6 +21,6 @@ export default GrandRow;
 
 const GrandRowStyled = styled.tr`
     img {
-        max-width: 50%;
+        max-width: 10%;
     }
 `;

@@ -65,12 +65,14 @@ const InputStyled = styled.div`
         width: 100%;
         font-size: 20px;
         padding: 10px;
-        border: solid 2px #eee;
+        color: #dfcf99;
+        background-color: #332f24;
+        border: 1px solid #734e32;
         border-radius: 5px;
         outline: none;
 
         &:focus {
-            background-color: #eee;
+            background-color: #26231b;
             border-color: #999;
         }
 

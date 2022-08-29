@@ -19,10 +19,13 @@ const TabMenuItem = ({curTab, curTabUpdate, item}) => {
 export default TabMenuItem;
 
 const TabMenuItemStyled = styled.div`
-    background-color: #0f0f0f;
+    background-color: #26231b;
     width: 150px;
     text-align: center;
     cursor: pointer;
+    border: 2px solid #734e32;
+    border-bottom: none;
+    z-index: 50;
     border-radius: 5px 5px 0px 0px;
     line-height: 40px;
     margin-right: 5px;

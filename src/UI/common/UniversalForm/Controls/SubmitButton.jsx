@@ -18,11 +18,11 @@ const SubmitButtonStyled = styled.div`
     text-align: right;
 
     button {
-        background-color: teal;
-        color: white;
+        background-color: #332f24;
+        color: #dfcf99;
         padding: 10px 20px;
+        border: 1px solid #734e32;
         border-radius: 5px;
-        border: none;
         cursor: pointer;
 
         &:hover, &:focus {

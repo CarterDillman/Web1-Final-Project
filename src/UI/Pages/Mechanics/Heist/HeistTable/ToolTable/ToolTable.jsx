@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-/* Scripts ---------------------------*/
-import { itemData } from 'UI/common/data/rogueData.js';
-
-/* Components ---------------------------*/
-import ToolRow from './ToolRow.jsx';
-
 const ToolTable = () => {
 
     return (
@@ -20,11 +14,20 @@ const ToolTable = () => {
                         <th>Cloak</th>
                         <th>Gear</th>
                     </tr>
-                    {
-                        itemData.map((data, idx) => {
-                            return <ToolRow key={idx} data={data}/> ;
-                        })
-                    }
+                    <tr>
+                        <th>Prefix</th>
+                        <td>Job Speed (81)</td>
+                        <td>Quantity (84)</td>
+                        <td>Lockdown Time (81)</td>
+                        <td>Job Speed (81)</td>
+                    </tr>
+                    <tr>
+                        <th>Suffix</th>
+                        <td>Reduced Fee (81)</td>
+                        <td>Chance for Duplicate (83)</td>
+                        <td>Reduced Alert from Chests (82)</td>
+                        <td>Reduced Fee (81)</td>
+                    </tr>
                 </tbody>
             </table>
         </ToolTableStyled>
@@ -34,10 +37,9 @@ const ToolTable = () => {
 export default ToolTable;
 
 const ToolTableStyled = styled.div`
-    margin: 30px;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    padding: 20px 50px 20px 50px;
     table {
         th {
             background-color: #332f24;
@@ -50,18 +52,18 @@ const ToolTableStyled = styled.div`
                 }
             }
         }
+        td {
+            color: #8888ff;
+        }
         th, td {
             margin: 0;
             padding: 10px;
             border-bottom: 1px solid #1a1812;
             border-right: 1px solid #1a1812;
-
+            line-height: 1.25;
             :last-child {
                 border-right: 0;
             }
         }
-    }
-    .modifier{
-        font-weight: bold;
     }
 `;

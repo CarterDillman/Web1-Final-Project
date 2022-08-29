@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* Components ---------------------------*/
 import GreaterRow from './GreaterRow.jsx';
 
 const GreaterTable = ({data, checkState, onChange}) => {
@@ -30,10 +31,9 @@ const GreaterTable = ({data, checkState, onChange}) => {
 export default GreaterTable;
 
 const GreaterTableStyled = styled.div`
-    margin: 30px;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
     table {
         th {
             background-color: #332f24;
@@ -49,12 +49,19 @@ const GreaterTableStyled = styled.div`
         th, td {
             margin: 0;
             padding: 10px;
-            border-bottom: 1px solid black;
-            border-right: 1px solid black;
+            border-bottom: 1px solid #1a1812;
+            border-right: 1px solid #1a1812;
 
             :last-child {
                 border-right: 0;
             }
         }
+    }
+    .items {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .check {
+        width: 5%;
     }
 `;

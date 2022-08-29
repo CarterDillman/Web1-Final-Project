@@ -34,7 +34,7 @@ const MediumLargeViewStyled = styled.div`
             flex: 1;
 
             .SiteLogo {
-                width: 80%;
+
                 margin: auto;
                 padding: 20px 0px;
             }
@@ -51,37 +51,33 @@ const MediumLargeViewStyled = styled.div`
             h2 { display: none; }
 
             a {
-                opacity: .8;
-                color: #84d4d4;
+                color: #a38d6d;
                 font-weight: bold;
                 text-decoration: none;
                 text-transform: uppercase;
-
-                &:hover, &:active, &:focus {
-                opacity: 1;
-                }
             }
 
-
-
             .MainMenu {
-                padding: 0px 0px 20px 0px;
+                padding: 20px 0px 0px 0px;
                 display: flex;
                 justify-content: flex-end;
-                height: 50px;
+                height: 55px;
+                z-index: 50;
 
                 a {
-                    width: 80px;
-                    line-height: 30px;
+                    width: 90px;
                     text-align: center;
-                    margin: 0px 0px 0px 5px;
+                    margin: 0px 0px 0px 10px;
+                    padding-top: 8px;
                     font-size: 12px;
-
-                    border-bottom: solid 3px #84d4d4;
+                    background-color: #26231b;
+                    border: 2px solid #734e32;
+                    border-bottom: none;
+                    border-radius: 5px 5px 0px 0px;
 
                     &.active {
-                        color: white;
-                        border-bottom-color: white;
+                        color: #f2c462;
+                        background-color: #734e32;
                     }
                 }
             }

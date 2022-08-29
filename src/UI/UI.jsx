@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* Components ---------------------------*/
 import Layout from './Layout/Layout.jsx';
 import Routing from './Routing.jsx';
 

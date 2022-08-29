@@ -21,4 +21,5 @@ export default TabMenuList;
 
 const TabMenuListStyled = styled.div`
     display: flex;
+    margin-bottom: 0px;
 `;

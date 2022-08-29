@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* Scripts ---------------------------*/
 import { rogueData, rogueHeader } from 'UI/common/data/rogueData.js';
 
+/* Components ---------------------------*/
 import RogueRow from './RogueRow.jsx';
 import RogueHeader from './RogueHeader.jsx';
 
@@ -31,10 +33,8 @@ const RogueTable = () => {
 export default RogueTable;
 
 const RogueTableStyled = styled.div`
-    margin: 30px;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
     table {
         thead {
             background-color: #332f24;
@@ -53,8 +53,10 @@ const RogueTableStyled = styled.div`
             margin: 0;
         }
         th, td {
+            text-align: center;
             border-bottom: 1px solid #1a1812;
             border-right: 1px solid #1a1812;
+            line-height: 1.25;
             :last-child {
                 border-right: 0;
             }
@@ -87,7 +89,7 @@ const RogueTableStyled = styled.div`
         color: #332f24;
     }
     .effect{
-        white-space: nowrap;
+        width: 100%;
         color: #8888ff;
     }
 `;
