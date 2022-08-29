@@ -140,6 +140,10 @@ const Essays = () => {
                 <p>I've decided to create a resource site similar to a wiki for the game Path of Exile (PoE). The game is notorious for its complexity and depth of systems. The community has created resource sites for various mechanics but not many look modern or allow for interactivity within the site. Rather than go through multiple sites, my site would provide a modern browser experience and hopefully reduce the initial complexity of this game.</p>
                 <p>The client for this site would mostly be for me and my benefit, however, this resource could help the community as a whole as well if I did decide to make this website public. I've chosen this because I've always been bothered by the antiquated sites that have been used by the community because there is no other reliable, up to date resource available to them. I know a lot about this game and the community and wanted to give a shot at an initial draft of what a modern resource could look like.</p>
             </Essay>
+            <Essay q='Q16: What is a Package Manager (e.g. NPM, Composer)? How does it play a role in software development?'>
+                <p>A package manager keeps track of what software is installed on your computer. It allows easy installation of new software, upgrading software to newer versions, or removing software that you previously installed. They also handle duplicate dependencies. </p>
+                <p>It also allows for easier sharing of development environments between collaborators. If one developer is using a specific package of a dependency, they can ensure that other developers that collaborate on the project are using the exact same version of dependency.</p>
+            </Essay>
         </EssaysStyled>
     );
 }
