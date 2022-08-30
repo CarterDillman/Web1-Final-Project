@@ -5,7 +5,6 @@ import styled from 'styled-components';
 // Components
 import SiteLogo from 'UI/common/SiteLogo.jsx';
 import MainMenu from '../Menus/MainMenu.jsx';
-import ClassMenu from '../Menus/ClassMenu.jsx';
 
 const MediumLargeView = () => {
     return (
@@ -16,7 +15,6 @@ const MediumLargeView = () => {
                 </div>
                 <div className='menus'>
                     <MainMenu />
-                    <ClassMenu />
                 </div>
             </div>
         </MediumLargeViewStyled>

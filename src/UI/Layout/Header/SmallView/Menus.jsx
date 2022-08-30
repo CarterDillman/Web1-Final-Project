@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 /* Components ---------------------------*/
 import MainMenu from '../Menus/MainMenu.jsx';
-import ClassMenu from '../Menus/ClassMenu.jsx';
 
 const Menus = ({showMenuUpdate}) => {
 
@@ -20,7 +19,6 @@ const Menus = ({showMenuUpdate}) => {
     return (
         <MenusStyled className='Menus'>
             <MainMenu showMenuUpdate={ showMenuUpdate }/>
-            <ClassMenu showMenuUpdate={ showMenuUpdate }/>
         </MenusStyled>
     );
 }
